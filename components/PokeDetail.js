@@ -33,13 +33,16 @@ const PokeDetail = ({route}) => {
 
   return (
     
-    <View>      
+    <View style={styles.container}>      
           {!loading &&  
               <>    
               <Text>{name}</Text>
            
+           <View style={styles.containerScreen}>
+
             {pokeDetail.sprites&& <Image source={{uri: pokeDetail.sprites.front_default }}
             style={{width: 300, height: 300}} />}
+           </View>
 
             <View>
               <Text>Tipos: </Text>
@@ -54,6 +57,22 @@ const PokeDetail = ({route}) => {
   )
 }
 
-const styles = StyleSheet.create({}) 
+const styles = StyleSheet.create({
+  container: {
+    flex:1,
+    backgroundColor: '#F61952',
+},
+containerScreen:{
+    padding:10,
+    backgroundColor: '#C9C4C0',
+    margin:'10%',
+    borderRadius:10,
+},
+screen:{
+    backgroundColor: '#15F301',
+    marginHorizontal: '5%',
+    marginVertical: '5%',
+},
+}) 
 
 export default PokeDetail
