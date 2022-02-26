@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#C9C4C0',
         margin:'10%',
         borderRadius:10,
+        
     },
     screen:{
         backgroundColor: '#15F301',

@@ -1,5 +1,6 @@
 
 import { StyleSheet, Text, View } from 'react-native';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Poke from './components/Poke';
 import Navigator from './navigation/Natigator';
@@ -16,6 +17,7 @@ export default function App() {
       
       <Header/>
       <Navigator/>   
+      <Footer/>
       {/* <Poke/>    */}
     </View>
   );
